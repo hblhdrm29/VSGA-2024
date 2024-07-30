@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 databaseHelper.addStudentDetail(etname.getText().toString());
-                etname.setText(");
+                etname.setText("");
                 Toast.makeText(MainActivity.this, "Stored Successfully!", Toast.LENGTH_SHORT).show();
             }
         });
