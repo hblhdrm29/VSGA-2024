@@ -21,8 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Masukkan nama file" />
+        android:inputType="text" />
 
     <TextView
         android:id="@+id/textView3"
@@ -39,8 +38,7 @@
         android:layout_weight="1"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:hint="Masukkan isi catatan" />
+        android:inputType="textMultiLine" />
 
     <Button
         android:id="@+id/button"
