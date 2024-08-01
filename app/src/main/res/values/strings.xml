@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Aplikasi Sqlite</string>
-    <string name="tambah_kontak">tambah_kontak</string>
-    <string name="input_nama">input_nama</string>
-    <string name="input_alamat">input_alamat</string>
-    <string name="submit">submit</string>
-    <string name="cancel">cancel</string>
+    <string name="tambah_kontak">Tambah Kontak</string>
+    <string name="input_nama">Input Nama</string>
+    <string name="input_alamat">Input Alamat</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
 </resources>

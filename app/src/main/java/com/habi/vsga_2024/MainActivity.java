@@ -2,6 +2,8 @@ package com.habi.vsga_2024;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Adapter;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton fab;
+    private ListView listView;
+    private MainAdapter adapter;
+    private DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +36,16 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, TambahMainActivity.class);
             startActivity(i);
         });
+        dbHelper = new DBHelper(this);
+        listView = findViewById(R.id.listView);
+        adapter = new MainAdapter(this);
+        listView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter.clear();
+        adapter.addAll(dbHelper.getData());
     }
 }

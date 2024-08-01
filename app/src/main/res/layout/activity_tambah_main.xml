@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -12,21 +13,23 @@
     tools:context=".TambahMainActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/namaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/input_nama"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/alamatEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/input_alamat"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +38,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -43,11 +46,12 @@
             android:text="@string/submit" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/cancelButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:text="@string/cancel" />
+
     </LinearLayout>
 </LinearLayout>
