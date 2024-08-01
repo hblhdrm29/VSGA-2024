@@ -16,9 +16,6 @@
             android:name=".DBHelper"
             android:exported="false" />
         <activity
-            android:name=".DatabaseHelper"
-            android:exported="false" />
-        <activity
             android:name=".MainAdapter"
             android:exported="false" />
         <activity
