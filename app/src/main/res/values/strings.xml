@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VSGA-2024</string>
+    <string name="nilai_sensor_cahaya">nilai_sensor_cahaya</string>
 </resources>
